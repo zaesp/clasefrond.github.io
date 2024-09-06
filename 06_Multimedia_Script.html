@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>multimedia y scripts</title>
+  <link href='/style.css' rel='stylesheet'>
+</head>
+<body>
+  <h1>Desabilitar campo de entrada de formulario</h1>
+    <form id="UserForm">
+        Nombre: <input type="text" id="name" name="name"><br>
+        Email: <input type="email" id="email" name="email"><br>
+        Edad: <input type="number" id="edad" name="edad"><br>
+        <br>
+        <button type="button" id="disablebutton">Desabilitar Campos</button>
+        <br>
+      </form>
+
+
+    <script>
+        document.getElementById("disablebutton").addEventListener("click", function(){
+            let inputs =document.getElementById("UserForm").getElementsByTagName("input");
+            for(let i=0;i<inputs.length;i++){
+                inputs[i].disabled=true;
+            }
+        });
+    </script>
+  
+  <audio controls>
+    <source src="" type="audio/mpeg">
+  </audio>
+
+  <video width="320" height="240" controls>
+    <source src="" type="video/mp4">
+  </video>
+
+  <progress value="32" max="100"></progress>
+
+  
+</body>
+</html>
