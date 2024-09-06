@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario</title>
+  <link href='/style.css' rel='stylesheet'>
+</head>
+<body>
+    <form>
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" placeholder="Ingrese su nombre">
+	<br>
+	<br>
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico">
+	<br>
+	<br>
+    <label for="message">Mensaje:</label>
+    <textarea id="message" name="message" placeholder="Escriba su mensaje"></textarea>
+	<br>
+	<br>
+    <label for="country">País:</label>
+    <select id="country" name="country">
+      <option value="">Seleccione un país</option>
+      <optgroup label="América">
+        <option value="argentina">Argentina</option>
+        <option value="brasil">Brasil</option>
+        <option value="colombia">Colombia</option>
+      </optgroup>
+      <optgroup label="Europa">
+        <option value="españa">España</option>
+        <option value="francia">Francia</option>
+        <option value="alemania">Alemania</option>
+      </optgroup>
+    </select>
+	<br>
+	<br>
+    <fieldset>
+      <legend>Género:</legend>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Masculino</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Femenino</label>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Otro</label>
+    </fieldset>
+	<br>
+	<br>
+    <label for="terms">Acepto los términos y condiciones:</label>
+    <input type="checkbox" id="terms" name="terms">
+	<br>
+	<br>
+    <input type="submit"></input>
+    <input type="reset"></input>
+    <button>Hello</button>
+	<br>
+	<br>
+    <label for="image">Imagen:</label>
+    <input type="image" id="image" name="image" src="image.png" alt="Imagen">
+	<br>
+	<br>
+    <input type="hidden" name="hidden" value="valor oculto">
+	<br>
+	<br>
+    <label for="datalist">Ciudad:</label>
+    <input type="text" id="datalist" name="datalist" list="cities">
+    <datalist id="cities">
+      <option value="Buenos Aires">
+      <option value="Madrid">
+      <option value="Paris">
+    </datalist>
+  </form>
+  
+</body>
+</html>
